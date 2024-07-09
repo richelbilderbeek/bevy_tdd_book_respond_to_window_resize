@@ -6,7 +6,7 @@ pub fn create_app() -> App {
     // Only add this plugin in testing.
     // The main app will assume it to be absent
     if cfg!(test) {
-        app.add_plugins(bevy::input::InputPlugin);
+        //app.add_plugins(bevy::input::InputPlugin);
         app.add_plugins(bevy::window::WindowPlugin::default());
     }
 
@@ -48,7 +48,6 @@ fn respond_to_window_resize(
 ) {
     let mut text = q.single_mut();
     for e in resize_reader.read() {
-        // When resolution is being changed
         text.sections[0].value = format!("{:.1} x {:.1}", e.width, e.height);
     }
 }
@@ -56,11 +55,6 @@ fn respond_to_window_resize(
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    #[test]
-    fn test_testing() {
-        assert_eq!(1 + 1, 2)
-    }
 
     #[test]
     fn test_can_create_app() {
@@ -99,7 +93,7 @@ mod tests {
             height: 100.0,
         });
         app.update();
-        
+
         assert_ne!(get_text_text(&mut app), "");
     }
 }
