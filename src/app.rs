@@ -6,7 +6,6 @@ pub fn create_app() -> App {
     // Only add this plugin in testing.
     // The main app will assume it to be absent
     if cfg!(test) {
-        //app.add_plugins(bevy::input::InputPlugin);
         app.add_plugins(bevy::window::WindowPlugin::default());
     }
 
