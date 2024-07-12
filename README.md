@@ -1,24 +1,24 @@
-# bevy_tdd_book_show_2d_coordinat_systems
+# bevy_tdd_book_respond_to_window_resize
 
-[![Check build](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_build.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_build.yaml)
-[![Check links](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_links.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_links.yaml)
-[![Check markdown](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_markdown.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_markdown.yaml)
-[![Check Rust style](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_rust_style.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_rust_style.yaml)
-[![Check spelling](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_spelling.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/check_spelling.yaml)
-[![Measure code coverage](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/measure_codecov.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/actions/workflows/measure_codecov.yaml)
-[![codecov](https://codecov.io/gh/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems/graph/badge.svg?token=XAVFZYDQKZ)](https://codecov.io/gh/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems)
+[![Check build](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_build.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_build.yaml)
+[![Check links](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_links.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_links.yaml)
+[![Check markdown](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_markdown.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_markdown.yaml)
+[![Check Rust style](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_rust_style.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_rust_style.yaml)
+[![Check spelling](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_spelling.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/check_spelling.yaml)
+[![Measure code coverage](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/measure_codecov.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/actions/workflows/measure_codecov.yaml)
+[![codecov](https://codecov.io/gh/richelbilderbeek/bevy_tdd_book_respond_to_window_resize/graph/badge.svg?token=XAVFZYDQKZ)](https://codecov.io/gh/richelbilderbeek/bevy_tdd_book_respond_to_window_resize)
 
 Chapter of [https://github.com/richelbilderbeek/bevy_tdd_book](https://github.com/richelbilderbeek/bevy_tdd_book)
 
-![Screenshot of this application](show_2d_coordinat_systems.png)
+![Screenshot of this application](respond_to_window_resize.png)
 
 ## Setup
 
 Setup is done as described in [the Bevy 'getting started' guide](https://bevyengine.org/learn/quick-start/getting-started/setup/):
 
 ```bash
-git clone https://github.com/richelbilderbeek/bevy_tdd_book_show_2d_coordinat_systems
-cd bevy_tdd_book_show_2d_coordinat_systems
+git clone https://github.com/richelbilderbeek/bevy_tdd_book_respond_to_window_resize
+cd bevy_tdd_book_respond_to_window_resize
 cargo init
 cargo add bevy
 ```
