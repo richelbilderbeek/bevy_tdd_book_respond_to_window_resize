@@ -32,19 +32,19 @@ fn add_text(mut commands: Commands) {
 
 #[cfg(test)]
 fn count_n_texts(app: &mut App) -> usize {
-    let mut query = app.world_mut().query::<&Text>();
+    let mut query = app.world_mut().query::<&Text2d>();
     query.iter(app.world_mut()).len()
 }
 
 #[cfg(test)]
 fn get_text_text(app: &mut App) -> String {
     assert_eq!(count_n_texts(app), 1);
-    let mut query = app.world_mut().query::<&Text>();
+    let mut query = app.world_mut().query::<&Text2d>();
     query.single_mut(app.world_mut()).0.clone()
 }
 
 fn respond_to_window_resize(
-    mut q: Query<&mut Text>,
+    mut q: Query<&mut Text2d>,
     mut resize_reader: EventReader<bevy::window::WindowResized>,
 ) {
     let mut text = q.single_mut();
