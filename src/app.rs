@@ -23,14 +23,11 @@ pub fn create_app() -> App {
 }
 
 fn add_camera(mut commands: Commands) {
-    commands.spawn(Camera2dBundle::default());
+    commands.spawn(Camera2d::default());
 }
 
 fn add_text(mut commands: Commands) {
-    commands.spawn(Text2d {
-        text: Text::from_section(String::new(), TextStyle { ..default() }),
-        ..default()
-    });
+    commands.spawn(Text2d::new(""));
 }
 
 #[cfg(test)]
@@ -43,7 +40,7 @@ fn count_n_texts(app: &mut App) -> usize {
 fn get_text_text(app: &mut App) -> String {
     assert_eq!(count_n_texts(app), 1);
     let mut query = app.world_mut().query::<&Text>();
-    query.single_mut(app.world_mut()).sections[0].value.clone()
+    query.single_mut(app.world_mut()).0.clone()
 }
 
 fn respond_to_window_resize(
@@ -52,7 +49,7 @@ fn respond_to_window_resize(
 ) {
     let mut text = q.single_mut();
     for e in resize_reader.read() {
-        text.sections[0].value = format!("{:.1} x {:.1}", e.width, e.height);
+        text.0 = format!("{:.1} x {:.1}", e.width, e.height);
     }
 }
 
