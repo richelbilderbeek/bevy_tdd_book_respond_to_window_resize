@@ -27,7 +27,7 @@ fn add_camera(mut commands: Commands) {
 }
 
 fn add_text(mut commands: Commands) {
-    commands.spawn(Text2dBundle {
+    commands.spawn(Text2d {
         text: Text::from_section(String::new(), TextStyle { ..default() }),
         ..default()
     });
