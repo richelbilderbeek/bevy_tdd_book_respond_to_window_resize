@@ -23,7 +23,7 @@ pub fn create_app() -> App {
 }
 
 fn add_camera(mut commands: Commands) {
-    commands.spawn(Camera2d::default());
+    commands.spawn(Camera2d);
 }
 
 fn add_text(mut commands: Commands) {
